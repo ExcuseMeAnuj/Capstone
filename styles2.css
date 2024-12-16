@@ -407,21 +407,27 @@ h2 {
     background-color: rgb(1, 30, 81);
 }
 
-.post-review .stars {
-    color: #FFD700;
-    cursor: pointer;
+.stars {
+    display: flex;
+    direction: row;
 }
 
-.post-review .stars input {
+.stars input {
     display: none;
 }
 
-.post-review .stars label {
-    font-size: 2em;
+.stars label {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
 }
 
-.post-review .stars label:hover, .post-review .stars label:hover ~ label,
-.post-review .stars input:checked ~ label {
+.stars input:checked ~ label {
+    color: #FFD700;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
     color: #FFD700;
 }
 
